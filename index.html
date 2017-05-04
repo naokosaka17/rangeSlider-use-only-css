@@ -69,8 +69,9 @@
       document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix)
 
     }
-
+    // change event when handleUpdate
     inputs.forEach(input => input.addEventListener('change', handleUpdate))
+    // when mouse over range,'px' changes every single times 
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))
 
   </script>
